@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ecd0ba54a7079646a9dd0058c259da7, type: 3}
+  m_Name: PlayerConfig
+  m_EditorClassIdentifier: 
+  moveThreshold: 0.1
+  moveVelocity: 8
+  moveAcceleration: 80
+  moveStopAcceleration: 200
+  jumpVelocity: 15
+  gravityDefault: 60
+  gravityUp: 35
+  gravityDown: 80
+  maxFall: 20
+  dashVelocity: 17
+  dashTime: 0.15
+  dashAfterTime: 0.15
+  dashDecline: {x: 0.96, y: 0.7}
+  maxEnergy: 1
+  attackEnergy: 0.5
+  dashEnergy: 0.5
+  chargeEnergy: 2
+  recoverEnergy: 1
+  attackTime: 0.5
+  chargeTime: 0.5
+  chargeEndTime: 0.5

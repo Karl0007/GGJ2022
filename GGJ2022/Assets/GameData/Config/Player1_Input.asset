@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6d811f25f6b3442b1cf34c8f5c1f4c, type: 3}
+  m_Name: Player1_Input
+  m_EditorClassIdentifier: 
+  horizontalName: Horizontal_0
+  verticalName: Vertical_0
+  jumpName: Jump_0
+  attackName: Attack1_0
+  chargeName: Attack2_0
+  dashName: Attack3_0

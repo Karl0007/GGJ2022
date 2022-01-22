@@ -115,6 +115,7 @@ public class PlayerConfig : ScriptableObject
 	public float maxEnergy;
 	public float attackEnergy;
 	public float dashEnergy;
+	public float startChargeEnergy;
 	public float chargeEnergy;
 	public float recoverEnergy;
 
@@ -138,6 +139,16 @@ public class PlayerConfig : ScriptableObject
 		return false;
 	}
 
+	public bool TryCharge(ref float cur)
+	{
+		if (cur > startChargeEnergy)
+		{
+			cur -= startChargeEnergy;
+			return true;
+		}
+		return false;
+	}
+
 	public void Charging(ref float cur,float deltaTime)
 	{
 		cur -= chargeEnergy * deltaTime;
@@ -153,7 +164,23 @@ public class PlayerConfig : ScriptableObject
 
 	#region Animation
 	public float attackTime;
-	public float chargeTime;
 	public float chargeEndTime;
+	public float chargeCanDashTime;
+	public float attackVelocity;
+	public float atokinVelocity;
+
+	public void GetAttackVelocity(ref Vector2 cur, Vector2 dir, bool startAttack, float deltaTime, float slowScale = 1)
+	{
+		if (startAttack)
+		{
+			cur.x = dir.normalized.x * attackVelocity;
+			return;
+		}
+		else
+		{
+			cur *= dashDecline;
+			return;
+		}
+	}
 	#endregion
 }

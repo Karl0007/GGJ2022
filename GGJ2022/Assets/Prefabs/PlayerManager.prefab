@@ -43,4 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2f73fbf1959f2e41ba1373ea73c3b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  m_Players:
+  - {fileID: 0}
+  - {fileID: 0}
+  minSize: 6
+  maxSize: 50

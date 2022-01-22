@@ -17,19 +17,22 @@ MonoBehaviour:
   moveAcceleration: 80
   moveStopAcceleration: 200
   jumpVelocity: 15
-  gravityDefault: 60
-  gravityUp: 35
-  gravityDown: 80
+  gravityDefault: 70
+  gravityUp: 40
+  gravityDown: 90
   maxFall: 20
-  dashVelocity: 17
-  dashTime: 0.15
+  dashVelocity: 15
+  dashTime: 0.1
   dashAfterTime: 0.15
   dashDecline: {x: 0.96, y: 0.7}
   maxEnergy: 1
-  attackEnergy: 0.5
-  dashEnergy: 0.5
-  chargeEnergy: 2
+  attackEnergy: 0.4
+  dashEnergy: 0.55
+  startChargeEnergy: 0.3
+  chargeEnergy: 1
   recoverEnergy: 1
-  attackTime: 0.5
-  chargeTime: 0.5
-  chargeEndTime: 0.5
+  attackTime: 0.1
+  chargeEndTime: 0.4
+  chargeCanDashTime: 0.15
+  attackVelocity: 10
+  atokinVelocity: 0

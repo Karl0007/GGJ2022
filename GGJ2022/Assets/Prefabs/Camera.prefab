@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7220068625116612451}
   - component: {fileID: 7220068625116612452}
   - component: {fileID: 7220068625116612453}
-  - component: {fileID: 634226180}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -27,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7220068625116612454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8330016, y: 1.9173276, z: 25.493908}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7220068625186161483}
@@ -43,7 +42,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BackGroundColor: {r: 0, g: 0.011396916, b: 0.23584908, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -84,22 +83,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7220068625116612454}
   m_Enabled: 1
---- !u!114 &634226180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7220068625116612454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca415920d7d5344ca52b303b6c5e066, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FollowTime: 0.2
-  ZoomTime: 0
-  targetSize: 6
-  baseSize: 0
 --- !u!1 &7220068625186161484
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7220068625186161483}
+  - component: {fileID: 1339125362}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -131,3 +115,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1339125362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220068625186161484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca415920d7d5344ca52b303b6c5e066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FollowTime: 0.2
+  ZoomTime: 0
+  targetSize: 6
+  baseSize: 0

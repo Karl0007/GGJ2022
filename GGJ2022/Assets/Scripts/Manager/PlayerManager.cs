@@ -18,6 +18,17 @@ public class PlayerManager : MonoBehaviour
 	public float minSize = 6;
 	public float maxSize = 50;
 
+	private void Update()
+	{
+		if (Input.GetKey(KeyCode.Escape))
+		{
+			foreach (var item in m_PlayerScore.Keys)
+			{
+				m_PlayerScore[item] = 1;
+			}
+		}
+	}
+
 	private void Start()
 	{
 		StartGame();

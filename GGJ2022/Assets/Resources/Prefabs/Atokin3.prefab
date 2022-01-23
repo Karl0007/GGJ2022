@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Dir: {x: 0, y: 0}
   m_Collider: {fileID: 4392990269143119943}
   m_PlayerID: 0
-  m_Level: 1
+  m_Level: 2
   m_Velocity: 30
   m_isFly: 1
   m_isFlyAttack: 1

@@ -16,8 +16,8 @@ TagManager:
   - Ground
   - PlayerBody
   - PlayerHit
-  - 
-  - 
+  - EnergyCollect
+  - Block
   - 
   - 
   - 

@@ -11,6 +11,7 @@ public class AttackController : MonoBehaviour
 	public int m_Level;
 	public float m_Velocity;
 	public bool m_isFly;
+	public bool m_isFlyAttack;
 	public PlayerController m_Player;
 	public ResourcesManager.AudioNames m_EndAudio;
 	public ResourcesManager.AudioNames m_StartAudio;
@@ -45,7 +46,7 @@ public class AttackController : MonoBehaviour
 
 	private void Awake()
 	{
-		m_Animator = GetComponent<Animator>();
+		m_Animator = GetComponentInChildren<Animator>();
 		Destroy(gameObject,m_lifeTime);
 	}
 
@@ -75,8 +76,8 @@ public class AttackController : MonoBehaviour
 			var otherPlayer = collision.GetComponentInParent<PlayerController>();
 			if (otherPlayer.ID != m_PlayerID)
 			{
-				otherPlayer.Hit();
-				PlayerManager.Instance.OnAttack(m_PlayerID, otherPlayer.ID);
+				otherPlayer.Hit(m_isFlyAttack);
+				PlayerManager.Instance.OnAttack(m_PlayerID, otherPlayer.ID, m_isFlyAttack);
 				if (m_Level <= 1 && m_isFly)
 				{
 					End();
@@ -109,7 +110,7 @@ public class AttackController : MonoBehaviour
 
 		if (collision.tag == "Wall")
 		{
-			if (m_isFly && m_Level < 2)
+			if (m_isFly && m_Level < 1)
 			{
 				End();
 			}

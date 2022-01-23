@@ -118,6 +118,13 @@ public class PlayerConfig : ScriptableObject
 	public float startChargeEnergy;
 	public float chargeEnergy;
 	public float recoverEnergy;
+	public float recoverEnergyTime;
+
+	public float maxAtokinEnergy;
+	public float atokinEnergy;
+
+	public float collectMaxSize;
+	public float collectMaxTime;
 
 	public bool TryAttack(ref float cur)
 	{
@@ -159,6 +166,11 @@ public class PlayerConfig : ScriptableObject
 	{
 		cur += recoverEnergy * deltaTime;
 		cur = Mathf.Clamp(cur, 0, maxEnergy);
+	}
+
+	public void GetAtokinEnergy(ref float cur)
+	{
+		cur = Mathf.Min(cur + atokinEnergy, maxAtokinEnergy);
 	}
 	#endregion
 

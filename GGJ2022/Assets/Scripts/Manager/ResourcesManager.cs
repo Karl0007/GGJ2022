@@ -29,7 +29,7 @@ public class ResourcesManager : MonoBehaviour
 
 	#region ‘§÷∆ÃÂº”‘ÿ
 	private const string prefabPath = "Prefabs/";
-	public enum PrefabsName { Attack,Atokin1,Atokin2,Atokin3,Hit,End };
+	public enum PrefabsName { Attack,Atokin1,Atokin2,Atokin3,Hit,AtokinEnergy, AtokinEnergyFactory,FlyAttack,Player, End };
 	private Dictionary<PrefabsName, GameObject> PrefabsDic = new Dictionary<PrefabsName, GameObject>();
 	private void prefabInit()
 	{
@@ -45,7 +45,7 @@ public class ResourcesManager : MonoBehaviour
 	private const string audioPath = "Audios/";
 	public enum AudioNames
 	{
-		Menu,Combat, Atokin, AtokinHit, Attack, AttackHit, Jump, PlayerHit,Charge,Dash ,Atokin1,Atokin2,AtokinHit1,End
+		Menu,Combat, Atokin, AtokinHit, Attack, AttackHit, Jump, PlayerHit,Charge,Dash ,Atokin1,Atokin2,AtokinHit1, FlyAttack,End
 	};
 	private Dictionary<AudioNames, AudioClip> AudioDic = new Dictionary<AudioNames, AudioClip>();
 	private void audioInit()

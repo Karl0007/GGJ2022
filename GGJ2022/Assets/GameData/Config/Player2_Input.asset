@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd6d811f25f6b3442b1cf34c8f5c1f4c, type: 3}
   m_Name: Player2_Input
   m_EditorClassIdentifier: 
-  horizontalName: Horizontal_1
-  verticalName: Vertical_1
-  jumpName: Jump_1
-  attackName: Attack1_1
-  chargeName: Attack2_1
-  dashName: Attack3_1
+  horizontalName: Horizontal_2
+  verticalName: Vertical_2
+  jumpName: Jump_2
+  jumpCode: 370
+  attackName: Attack_2
+  attackCode: 372
+  chargeName: 
+  chargeAxis: Atokin_2
+  dashName: Dash_2
+  dashCode: 371

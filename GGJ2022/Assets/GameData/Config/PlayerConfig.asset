@@ -31,6 +31,11 @@ MonoBehaviour:
   startChargeEnergy: 0.3
   chargeEnergy: 1
   recoverEnergy: 1
+  recoverEnergyTime: 0.35
+  maxAtokinEnergy: 30
+  atokinEnergy: 1
+  collectMaxSize: 20
+  collectMaxTime: 0.6
   attackTime: 0.1
   chargeEndTime: 0.4
   chargeCanDashTime: 0.15

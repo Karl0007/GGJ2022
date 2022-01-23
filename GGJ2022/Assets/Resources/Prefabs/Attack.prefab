@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1831441187}
   - component: {fileID: 1831441188}
   - component: {fileID: 1831441189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 9061038380957502761}
   - component: {fileID: 9061038380957502767}
   - component: {fileID: 9061038380957502766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flash_06_color1 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 9061038381198602805}
   - component: {fileID: 9061038381198602795}
   - component: {fileID: 9061038381198602794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flash_06_color2 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

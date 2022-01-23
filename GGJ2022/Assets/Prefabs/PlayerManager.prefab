@@ -43,8 +43,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2f73fbf1959f2e41ba1373ea73c3b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Players:
+  m_PlayerNum: 2
+  m_InputConfgs:
+  - {fileID: 11400000, guid: 127962a9dbfc6914188fceb034f62e27, type: 2}
+  - {fileID: 11400000, guid: 6e760c94bca2dd64f9d6a7876a2e211c, type: 2}
+  m_Colors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0, g: 1, b: 1, a: 1}
+  m_Players: []
+  m_Board:
   - {fileID: 0}
   - {fileID: 0}
-  minSize: 6
-  maxSize: 50
+  minSize: 5
+  maxSize: 7.3

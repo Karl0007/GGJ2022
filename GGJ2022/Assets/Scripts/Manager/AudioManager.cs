@@ -118,7 +118,7 @@ public class AudioManager : MonoBehaviour
 
 	private void Start()
 	{
-		//PlayBGM(ResourcesManager.AudioNames.Combat);
+		PlayBGM(ResourcesManager.AudioNames.Combat);
 	}
 
 	public float BGMTime()
